@@ -41,19 +41,19 @@ variable "subnets" {
     subnet_name                      = string
     subnet_ip                        = string
     subnet_region                    = string
-    subnet_private_access            = optional(string)
-    subnet_private_ipv6_access       = optional(string)
-    subnet_flow_logs                 = optional(string)
-    subnet_flow_logs_interval        = optional(string)
-    subnet_flow_logs_sampling        = optional(string)
-    subnet_flow_logs_metadata        = optional(string)
-    subnet_flow_logs_filter          = optional(string)
-    subnet_flow_logs_metadata_fields = optional(list(string))
-    description                      = optional(string)
-    purpose                          = optional(string)
-    role                             = optional(string)
-    stack_type                       = optional(string)
-    ipv6_access_type                 = optional(string)
+    subnet_private_access            = (string)
+    subnet_private_ipv6_access       = (string)
+    subnet_flow_logs                 = (string)
+    subnet_flow_logs_interval        = (string)
+    subnet_flow_logs_sampling        = (string)
+    subnet_flow_logs_metadata        = (string)
+    subnet_flow_logs_filter          = (string)
+    subnet_flow_logs_metadata_fields = (list(string))
+    description                      = (string)
+    purpose                          = (string)
+    role                             = (string)
+    stack_type                       = (string)
+    ipv6_access_type                 = (string)
   }))
   description = "The list of subnets being created"
 }
